@@ -1,0 +1,181 @@
+<head>
+    <meta name="csrf-token" content="dqtZlDU41vTmR0Bnp35dGccVj9dTxtTxSfFfd9ko">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://espacouniversitario.ib.itaborai.rj.gov.br/css/carteirinha-digital.css?18032025195622">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://espacouniversitario.ib.itaborai.rj.gov.br/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://espacouniversitario.ib.itaborai.rj.gov.br/adminlte/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- sweetalert2 -->
+    <link rel="stylesheet" href="https://espacouniversitario.ib.itaborai.rj.gov.br/adminlte/plugins/sweetalert2/sweetalert2.min.css">
+
+    <title>Carteirinha Digital</title>
+</head>
+<body style="--color-primary: #fd7e14;">
+    <div class="navbar-carteirinha">
+        <div class="navbar-carteirinha-container">
+            <div>
+                <img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/logo-prefeitura.png" alt="">
+            </div>
+
+            <div>
+                <button class="icon-menu" type="button" data-toggle="modal" data-target="#exampleModal">
+                    <img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/icon-menu.png" alt="Icone menu">
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-geral">
+
+            <input type="hidden" value="2" id="turno">;
+        
+        <input type="hidden" id="id_aluno" value="3814">
+        <input type="hidden" value="aluno" id="prefixo">
+        <input type="hidden" value="2" id="cidade">
+
+        <div class="header">
+            <div class="header-content">
+                <div class="wrapper-data-hora">
+                    <div class="data-hora">
+                    Ter 18/03/2025
+                    </div>
+                    <div class="data-hora">19:56</div>
+                </div>
+                <div class="logo-eu">
+                    <img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/logo-eu.png" alt="">
+                </div>
+
+                <div class="wrapper-foto">
+                    <img src="foto/euc.jpg" id="foto_carteirinha" alt="Foto da pessoa">
+                    <div class="icon-upload-image">
+                        <label for="foto"><img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/icon-camera.png" alt="Icone camera"></label>
+                        <input type="file" accept="image/*" capture="camera" id="foto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dados-aluno">
+            <h6 class="titulo-dados">ALUNO</h6>
+            
+            <p class="nome-aluno">Josué Lourenço dos Santos</p>
+            <div class="box-cpf">
+                <h6 class="titulo-dados">cpf</h6>
+                <p class="numero-cpf">188.864.337-43</p>
+            </div>
+        </div>
+        <div class="dados-instituicao-aluno">
+            <div class="container-turno-matricula">
+                <div>
+                    <h6 class="titulo-dados">instituição</h6>
+                    <p class="texto-instituicao-aluno">
+                        UFF</p>
+                </div>
+                <div>
+                    <h6 class="titulo-dados">período</h6>
+                    <p class="texto-instituicao-aluno">
+                        2025.1</p>
+                </div>
+            </div>
+            <div class="container-turno-matricula">
+                <div>
+                    <h6 class="titulo-dados">turno</h6>
+                    <p class="texto-instituicao-aluno">
+                        Integral</p>
+                </div>
+                <div>
+                    <h6 class="titulo-dados">matrícula</h6>
+                    <p class="texto-instituicao-aluno">
+                        498029450</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/logo-prefeitura.png" alt="">
+                    </div>
+                    <button type="button" class="button-close" data-dismiss="modal" aria-label="Close">
+                        <span class="ion-close-round" title="ion-close-round" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    
+                    <div class="box-icon-titulo-subtitulo" id="box-editar-senha">
+                        <button class="box-icon-modal" type="button" data-toggle="collapse" data-target="#editar-senha" aria-expanded="false" aria-controls="editar-senha">
+                            <img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/icon-edit.png" alt="Icone editar">
+                        </button>
+                        <div>
+                            <h1 class="titulo-modal">EDITAR SENHA</h1>
+                            <p class="subtitulo-modal">Redefina sua senha</p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="editar-senha">
+                        <form id="carteirinha-form-editar">
+                            
+                            <input value="santtosdev@gmail.com" type="hidden" id="email">
+                            <input value="198213b5-5ecf-42b2-b212-48844489ed2e" type="hidden" id="codhash">
+                            
+                            <input class="input-modal" type="password" placeholder="NOVA SENHA" id="senha">
+                            <input class="input-modal" type="password" placeholder="CONFIRMAR SENHA" id="confirma-senha">
+                            <button type="submit" class="button-modal">ALTERAR SENHA</button>
+                        </form>
+                    </div>
+                    <a href="https://espacouniversitario.ib.itaborai.rj.gov.br/logout" role="button">
+                        <div class="box-icon-titulo-subtitulo" id="box-editar-senha">
+
+                            <div class="box-icon-modal">
+                                <img src="https://espacouniversitario.ib.itaborai.rj.gov.br/image/icon-logout.png" alt="Icone logout">
+                            </div>
+                            <div>
+                                <h1 class="titulo-modal">LOGOUT</h1>
+                                <p class="subtitulo-modal">Saia do sistema</p>
+                            </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function atualizarDataHora() {
+            const agora = new Date();
+    
+            const opcoesData = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' };
+            const dataFormatada = agora.toLocaleDateString('pt-BR', opcoesData).replace(',', '');
+    
+            const horas = agora.getHours().toString().padStart(2, '0');
+            const minutos = agora.getMinutes().toString().padStart(2, '0');
+            const horaFormatada = `${horas}:${minutos}`;
+    
+            const elementosDataHora = document.querySelectorAll('.data-hora');
+            if (elementosDataHora.length >= 2) {
+                elementosDataHora[0].textContent = dataFormatada;
+                elementosDataHora[1].textContent = horaFormatada;
+            }
+        }
+    
+        // Atualiza a cada minuto
+        setInterval(atualizarDataHora, 60000);
+        // Atualiza ao carregar a página
+        atualizarDataHora();
+    </script>
+    
+
+</body>
